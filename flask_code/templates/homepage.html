@@ -1,0 +1,225 @@
+{% extends 'layouts.html'%}
+
+{% block contentA %}
+<div class="contentA">
+<div class="card text-center">
+    <div class="card-body">
+      <h2 class="card-title">Bitcoin Price Prediction Based on Twitter Sentiment Analysis</h2>
+      <br>
+      <h3 class="card-text">Technocolabs: Build With AI</h3>
+      <br>
+      <a href="https://technocolabs.tech/" class="btn btn-primary">Technocolabs</a>
+      <br><br>
+      <h3 class="card-text">Data Science Internship: Major Project</h3>
+      <br>
+    </div>
+</div>
+</div>
+<br><br><br>
+{% endblock contentA %}
+{%block contentB%}
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+  <div class="section-title">
+<div class="login">
+  <h3>Write Your Tweet</h3>
+<br><br>
+   <!-- Main Input For Receiving Query to our ML -->
+  <form action="{{ url_for('tweet')}}" method="post">
+    
+    <input type="text" class="form-control" name="TweetonBitcoin" placeholder="Enter Tweet" required="required" />
+<br><br>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+
+ <br>
+ <br>
+ <h5>Result</h5>
+ {{ prediction_text }}
+<br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+{%endblock contentB%}
+{%block contentC%}
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+  <div class="section-title">
+    <h2>About Us</h2>
+    <p>Bitcoin Price Prediction Project is maintained by a small team of Aspiring Data Scientists on GitHub. We’re actively looking to grow this team and would love to hear from you if you’re excited about CSS at scale, writing and maintaining JavaScript plugins, improving build tooling processes for frontend code and creating predictive models.</p>
+    <h3>Team</h3>
+    <p>An overview of the founding team and core contributors to Bitcoin API Project.</p>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+      <h4>Dhruv Bhatia</h4>
+      <span>Former Sr. Sales Manager</span>
+      <span>Data Science Intern - Team Leader @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+      <h4>Megha Rathod</h4>
+      <span>TechCiti Software Consulting Private Limited-</span>
+      <span>Data Science Intern - Team Leader @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+      <h4>Gaurav Kumar Sharma</h4>
+      <span>Mechanical Engineer IIT(Indian School of Mines),Dhanbad- (Student)</span>
+      <span>Data Science Intern - Team Leader @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+      <h4>Sadhvi Mehra</h4>
+      <span>MSc Math Delhi Technology University(Formerly DCE) - (Student)</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Manvi Panjwani</h4>
+      <span>Btech(CSE) in Third Year (Amity University Noida)- (Student)</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Ali Mirza</h4>
+      <span>Indian Institute of Technology,Guwahati</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Sharie R Nath</h4>
+      <span>Network Engineer @BSNL,DS,ML & DL also Tableau</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Karan Chawla</h4>
+      <span>CS @Vellore Institute of Technology College - (Student)</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Bobby</h4>
+      <span>CS @ VIT Bhopal University- (Student) </span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Purva Pare</h4>
+      <span>CS @Vellore Institute of Technology College - (Student)</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+      <div class="member-info">
+        <br>
+      <h4>Suraj Sanjeev Pawar</h4>
+      <span>Electronics and Telecommunication Engineer-SIT College</span>
+      <span>Data Science Intern @Technocolabs</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+{%endblock contentC%}
+{%block contentD%}
+<br><br><br><br>
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>Technocolabs</h3>
+          <p>
+            JP Tower, First Floor P1, Dhar Naka Indore<br>
+            Madhya Pradesh,452002<br>
+            India <br><br>
+           <!-- <strong>Phone:</strong> +91 8319291391<br> -->
+            <strong>Email:</strong>contact@technocolabs.tech<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Data Science</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Machine Learning</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Android Development</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Signup in our Newsletter for official Updates !!! </p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-lg-flex py-4">
+
+    <div class="mr-lg-auto text-center text-lg-left">
+      <div class="copyright">
+        © Copyright <strong><span>Technocolabs2020</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="">Technocolabs</a>
+      </div>
+    </div>
+    <div class="social-links text-center text-lg-right pt-3 pt-lg-0">
+      <a href="https://twitter.com/Technocolabs1?s=09" class="twitter"><i class="bx bxl-twitter"></i></a>
+      <a href="https://m.facebook.com/Technocolabs/" class="facebook"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/technocolabs94/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
+      <a href="technocollabs@gmail.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+      <a href="https://www.linkedin.com/company/technocolabs" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+{%endblock contentD%}

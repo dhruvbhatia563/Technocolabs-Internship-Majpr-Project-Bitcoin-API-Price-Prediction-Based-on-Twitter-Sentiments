@@ -1,0 +1,29 @@
+{% extends 'homepage.html'%}
+
+{%block contentB%}
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+  <div class="section-title">
+<div class="login">
+  <h3>Write Your Tweet</h3>
+<br><br>
+   <!-- Main Input For Receiving Query to our ML -->
+  <form action="{{ url_for('tweet')}}" method="post">
+    <input type="text" class="form-control" name="TweetonBitcoin" placeholder="Enter Tweet" required="required" />
+<br><br>
+      <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+  </form>
+
+ <br>
+ <br>
+ <h5>Result</h5>
+ {{ prediction_text }}
+<br><br>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br><br>
+{% endblock contentB %}

@@ -24,24 +24,7 @@ Heroku Login Page Overview: Next step would be to follow the instructions given 
 
 DIRECTORY TREE:
 
-├── flask code 
-│    ├── static 
-│    │     ├── styles.css
-│    │     ├── main.js
-│    ├── templates
-│    │     ├── about.html
-│    │     ├── homepage.html
-│    │     ├── layouts.html
-│    │     ├── link.html
-│    │     ├── tweet.html
-│    ├── __init__.py
-│    ├── routes.py
-├── Procfile
-├── README.md
-├── run.py
-├── bitcoin_price.ipynb
-├── bitcoin.pkl
-├── requirements.txt
+![image](https://user-images.githubusercontent.com/68370376/115851636-d00a4f00-a444-11eb-9799-868840844efd.png)
 
 DEMO:
 
